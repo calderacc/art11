@@ -24,11 +24,50 @@
 
         <div class="row">
             <div class="col-6">
-                Foo
+                <div class="card">
+                    <div class="card-header">
+                        What?
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            We provide a list of hostnames and regular expressions for websites which may not like to get links as described in Article 11 of the European Copyright Directive.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="col-6">
-                Bar
+                <div class="card">
+                    <div class="card-header">
+                        Query the list
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Call <code>/api/list</code> to retrieve a list of black and whitelisted hostnames and urls.
+                        </p>
+
+                        <a href="{{ path('api_list') }}" class="btn btn-primary">
+                            Try it
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Fork me at GitHub
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Find the repository of art11 backend and frontend at <a href="https://github.com/calderacc/art11">calderacc/art11</a>.
+                        </p>
+
+                        <a href="https://github.com/calderacc/art11" class="btn btn-primary">
+                            Fork me
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
