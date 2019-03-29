@@ -26,7 +26,7 @@ class ApplicationController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $session->getFlashBag()->add('success', 'Dein Eintrag wurde gespeichert.');
+            $session->getFlashBag()->add('success', 'application.persited');
 
             $registry->getManager()->persist($listItem);
             $registry->getManager()->flush();
