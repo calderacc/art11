@@ -1,0 +1,21 @@
+frontpage:
+  headline: Art11 Database
+  boxes:
+    wtf_box:
+      headline: What?
+      text: We provide a list of hostnames and regular expressions for websites which may not like to get links as described in Article 11 of the European Copyright Directive.
+    query_box:
+      headline: Query the list
+      text: 'Call <code>/api/list</code> to retrieve a list of black and whitelisted hostnames and urls.'
+      button:
+        caption: Try it
+    github_box:
+      headline: Fork me at GitHub
+      text: 'Find the repository of art11 backend and frontend at <a href="https://github.com/calderacc/art11">calderacc/art11</a>.'
+      button:
+        caption: Fork me
+    application_box:
+      headline: Add an hostname
+
+application:
+  persisted: Your hostname application was saved and will now be queued for approval.
