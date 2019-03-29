@@ -13,7 +13,7 @@ class ListItemType extends AbstractType
     {
         $builder
             ->add('hostname')
-            ->add('regex')
+            //->add('regex')
             ->add('listType')
             ->add('reason');
     }
