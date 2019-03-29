@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ListItemRepository")
@@ -22,6 +23,7 @@ class ListItem
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @JMS\Expose
+     * @Assert\NotBlank
      */
     private $hostname;
 
@@ -52,8 +54,14 @@ class ListItem
     /**
      * @ORM\Column(type="text", nullable=true)
      * @JMS\Expose
+     * @Assert\NotBlank
      */
     private $reason;
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime();
+    }
 
     public function getId(): ?int
     {
