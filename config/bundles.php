@@ -16,4 +16,5 @@ return [
     Sonata\AdminBundle\SonataAdminBundle::class => ['all' => true],
     Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle::class => ['all' => true],
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
+    MalteHuebner\ImpressBundle\MalteHuebnerImpressBundle::class => ['all' => true],
 ];

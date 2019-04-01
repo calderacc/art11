@@ -1,0 +1,15 @@
+malte_huebner_impress:
+  source: remote_json
+  remote:
+    url: https://maltehuebner.de/malte.jsonf
+    cache_ttl: 86400
+  defaults:
+    first_name: Malte
+    last_name: Hübner
+    street: Niebuhrstraße
+    house_number: 48
+    zip_code: 24118
+    city: Kiel
+    country: Deutschland
+    phone_number: 0151 172 77 032
+    email_address: maltehuebner@gmx.org
